@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <img src="ai.jpeg" id="logo" alt="">
+            <a href="#container">Home</a>
+            <a href="#img">About</a>
+            <a href="#ser">Service</a>
+            <a href="#last">Contact</a>
+        </div>
+
+        <div id="container">
+            
+            <h1>
+                Start <p>Solutionai</p>   
+                
+            </h1>
+            <h1 class="h1">Customer Service</h1>
+            <div id="button">
+                <h3>Get Started</h3>
+                <div id="green"></div>
+            </div>
+        </div>
+        <marquee behavior="" direction="" scrollamount="20" scrolldelay="50">
+            
+            <span class="m">Artificial Intelegence</span>
+            <span class="m">Inovation</span>
+            <span class="m">Technology</span>
+            <span class="m">Generative AI</span>
+            
+        </marquee>
+        <div id="img">
+            <h1>About Solution AI</h1>
+            <div class="para">
+            <p>Solution AI refers to artificial intelligence systems designed to address specific problems or optimize various processes. These systems leverage machine learning algorithms, data analytics, and automation to provide precise and efficient solutions across multiple industries, such as healthcare, finance, and manufacturing. By enhancing decision-making, productivity, and innovation, Solution AI significantly reduces human error and operational costs. It enables businesses to improve performance, streamline operations, and adapt to changing market conditions, driving overall growth and competitiveness in the digital age.</p>
+             </div>
+        </div>
+        <div id="ser">
+            <div id="services">
+                 <h3>Solution AI Services</h3>
+                 <h1>Generative AI Implementation</h1>
+                 <h5>Plan, Bulid and implement your generative AI projects to meet your business objectives. </h5>
+                 <button>
+                    Learn More
+                </button>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div id="last">
+    <div id="form-main" >
+        <h1>Let's Chat</h1>
+        <p>Whether you have a question, want to start a project or simply want to connect, feel free to send me a message in the contact form.</p>
+        <form id="contact-form" action="https://formspree.io/f/myzgyapk" method="POST">
+
+            <label for="name">Name: *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email: *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company">
+
+            <label for="message">Message: *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
