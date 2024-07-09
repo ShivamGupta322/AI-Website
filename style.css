@@ -322,3 +322,9 @@ textarea {
 *:required {
     border-color: red;
 }
+
+#main #nav a:hover{
+    opacity: 0.8;
+    transform: scale(1.2);
+    color: #6c5d5d;
+}
