@@ -1,61 +1,20 @@
-var nm=document.querySelector("#name")
-var em=document.querySelector("#email")
 
-var msg=document.querySelector("#message")
-
-var cmp=document.querySelector("#company")
-
-var sub=document.querySelector("#submit")
+var nm = document.querySelector("#name");
+var em = document.querySelector("#email");
+var msg = document.querySelector("#message");
+var cmp = document.querySelector("#company");
 
 
-nm.addEventListener("mouseover", function() {
-    this.style.transform = "scale(1.04)"; 
-    this.style.backgroundColor="#D3D3D3"
-  });
-  
-  nm.addEventListener("mouseout", function() {
-    this.style.transform = "scale(1)"; 
-    this.style.backgroundColor="#fff"
-  });
+function handleMouseOver() {
+  this.style.transform = "scale(1.04)";
+  this.style.backgroundColor = "#D3D3D3";
+}
 
-
-
-  em.addEventListener("mouseover", function() {
-    this.style.transform = "scale(1.04)"; 
-    this.style.backgroundColor="#D3D3D3"
-  });
-  
-  em.addEventListener("mouseout", function() {
-    this.style.transform = "scale(1)"; 
-    this.style.backgroundColor="#fff"
-  });
-
-
-  msg.addEventListener("mouseover", function() {
-    this.style.transform = "scale(1.04)"; 
-    this.style.backgroundColor="#D3D3D3"
-  });
-  
-  msg.addEventListener("mouseout", function() {
-    this.style.transform = "scale(1)"; 
-    this.style.backgroundColor="#fff"
-  });
-
-
-  cmp.addEventListener("mouseover", function() {
-    this.style.transform = "scale(1.04)"; 
-    this.style.backgroundColor="#D3D3D3"
-  });
-  
-  cmp.addEventListener("mouseout", function() {
-    this.style.transform = "scale(1)"; 
-    this.style.backgroundColor="#fff"
-  });
-
-
-
-
-
-
-
- 
+function handleMouseOut() {
+  this.style.transform = "scale(1)";
+  this.style.backgroundColor = "#fff";
+}
+[nm, em, msg, cmp].forEach(element => {
+  element.addEventListener("mouseover", handleMouseOver);
+  element.addEventListener("mouseout", handleMouseOut);
+});
