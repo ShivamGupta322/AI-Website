@@ -356,3 +356,12 @@ textarea {
     transform: scale(1.2);
     color: #6c5d5d;
 }
+
+
+#form-main input, textarea{
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: inset 5px 5px 7px #5a5a5a,
+                inset -5px -5px 7px #ffffff;
+                border: none;
+}
